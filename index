@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OHNS.org</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500&display=swap');
+
+  :root {
+    --ink: #1c2b2e;
+    --paper: #f6f4ef;
+    --line: #c9c2b3;
+    --accent: #2f5d5a;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  main {
+    max-width: 34rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .mark {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 28px;
+    border: 1.5px solid var(--accent);
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .mark::before {
+    content: "";
+    position: absolute;
+    inset: 9px;
+    border: 1.5px solid var(--accent);
+    border-radius: 50%;
+  }
+
+  h1 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 4vw, 2.1rem);
+    line-height: 1.3;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+
+  h1 span {
+    display: block;
+  }
+
+  p.tag {
+    font-size: 0.95rem;
+    color: #5b6664;
+    margin: 0 0 32px;
+  }
+
+  .rule {
+    width: 40px;
+    height: 1px;
+    background: var(--line);
+    margin: 0 auto 32px;
+  }
+
+  a.mail {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease;
+  }
+
+  a.mail:hover,
+  a.mail:focus-visible {
+    border-bottom-color: var(--accent);
+  }
+</style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true"></div>
+    <h1><span>Otolaryngology&nbsp;&ndash;</span><span>Head and Neck Surgery</span></h1>
+    <p class="tag">ohns.org</p>
+    <div class="rule"></div>
+    <a class="mail" href="mailto:ad@ohns.org">ad@ohns.org</a>
+  </main>
+</body>
+</html> 
